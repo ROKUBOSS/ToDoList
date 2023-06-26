@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blinking - Text</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        @keyframes blink {
+            0% {
+                color: red;
+                /* opacity: 0; */
+                
+            }
+            25% {
+                color: blue;
+                /* opacity: 1; */
+                
+            }
+            50% {
+                color: green;
+                /* opacity: 0; */
+            }
+            75% {
+                color: yellow;
+                /* opacity: 1; */
+            }
+            100% {
+                color: purple;
+                /* opacity: 0; */
+            }
+        }
+
+        .blink-text {
+            animation: blink 1.5s infinite;
+            animation-duration: 9s;
+            animation-timing-function: ease-out;
+            position: relative;
+            top: 500px;
+        }
+        :hover .blink-text{
+            font-size: 80px;
+            transform: rotate(360deg);
+            transition: all 3s linear;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 class="blink-text">Blinking Text</h1>
+
+    </center>
+</body>
+</html>
+Write to Rokib Hasan
